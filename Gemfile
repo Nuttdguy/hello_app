@@ -40,4 +40,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '1.1.3'
 end
+  
+group :production do
+  gem 'pg', '0.17.1'
+  # PostgreSQL database used by Heroku which allows rails to talk to Postgres.
+  gem 'rails_12factor', '0.0.2'
+  # Used by Heroku to sreve static assets, such as images and stylesheets
+end
+
+
 
